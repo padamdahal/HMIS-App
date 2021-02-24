@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>COVID-19 pandemic reporting and service utilization</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+	<style type="text/css">
+		table {width:100%}
+		.pvtTotal, .rowTotal, .pvtGrandTotal{visibility:hidden !important;display:none !important}
+		.pvtUnused li span.pvtAttr{display:none !important;}
+		.pvtTotalLabel{visibility:hidden !important;display:none !important}
+	</style>
+	
+	<!--script type="text/javascript" src="pivottable/jquery.min.js"></script>
+	<script type="text/javascript" src="pivottable/jquery-ui.min.js"></script-->
+	
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <link rel="stylesheet" type="text/css" href="pivottable/pivot.css">
+	<link rel="stylesheet" type="text/css" href="pivottable/c3.min.css">
+    <script type="text/javascript" src="pivottable/pivot.js"></script>
+	<script type="text/javascript" src="pivottable/d3.min.js"></script>
+	<script type="text/javascript" src="pivottable/c3.min.js"></script>
+	<script type="text/javascript" src="pivottable/c3_renderers.min.js"></script>
+	<script type="text/javascript" src="pivottable/gchart_renderers.min.js"></script>
+	
+	<link type="text/css" rel="stylesheet" media="screen" href="../../../dhis-web-commons/javascripts/jQuery/ui/css/redmond/jquery-ui.css" />
+	<link type="text/css" rel="stylesheet" media="screen" href="../../../dhis-web-commons/css/light_blue/light_blue.css">
+	<link type="text/css" rel="stylesheet" media="screen,print" href="../../../dhis-web-commons/css/widgets.css" />
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/underscore.min.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.util.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/periodType.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/date.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/jQuery/calendars/jquery.calendars.min.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/jQuery/calendars/jquery.calendars.plus.min.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.period.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/jQuery/calendars/jquery.calendars.picker.min.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.storage.ss.js?_rev=19841"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.storage.ls.js?_rev=19841"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.storage.idb.js?_rev=19841"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.storage.memory.js?_rev=19841"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.storage.js?_rev=19841"></script>
+	<script type="text/javascript" src="ouwt.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="oumapping.js"></script>
+  </head>
+
+  <body>
+    <div class="container" style="margin-bottom:10px;margin-top:20px;">
+		<div class="row position-sticky" style="box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;">
+			<div style="float:left;">
+				<img src="https://dohs.gov.np/wp-content/uploads/2019/01/gov-logo.png"/>
+			</div>
+			<div style="color:#c50a17;padding:10px 0 0 10px;">
+				<h4>Department of Health Services</br>
+				Management Division</br>
+				Integrated Health Information Management Section (IHIMS)</h4>
+			</div>
+		</div>
+	  
+		<div class="row" style="background:#337ab7;color:#fff;box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;">
+			<div class="col-md-9">
+				<h3>COVID-19 Designated Hospitals Reporting App</h3>
+				<p>Daily Reporting system during COVID-19 pandemic</p>
+			</div>
+			<div class="col-md-3" style="padding-top:20px;">
+				<a class="btn btn-success" href="/hmis" style="float:left;margin:0 3px 5px 0;">Home</a>
+				<a class="btn btn-warning" id="dashboard" href="/hmis/dhis-web-dashboard/#/diqQqH1vM9o" style="float:left;margin:0 3px 5px 0;">Dashboard</a>
+				<a class="btn btn-success" id="helplink" href="guidelines.png" target="_blank" style="float:left;margin:0 3px 5px 0;">Guidelines</a>
+				<a class="btn btn-success" id="videolink" href="https://drive.google.com/file/d/1SPUQn2jdURUWsGmhUcnyxFTmi3T2j5yO/view?usp=sharing" target="_blank" style="float:left;margin:0 3px 5px 0;">Video Tutorial</a>
+			</div>
+		</div>
+
+		<hr/>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="report" class="report">
+					<p>Loading....</p>
+				</div>	
+			</div>
+		</div>
+		</br>
+	</div>
+</body>
+</html>

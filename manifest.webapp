@@ -1,0 +1,23 @@
+{
+  "launch_path": "index.html",
+  "default_locale": "en",
+  "activities": {
+    "dhis": {
+      "href": "*"
+    }
+  },
+  "appType": "APP",
+  "name": "COVID-19 Vaccination Reporting",
+  "version": "1.0.0",
+  "description": "COVID-19 Vaccination Reporting",
+  "developer": {
+    "name": "IHIMS/DoHS",
+    "email": "padam.dahal@giz.de",
+    "url": "",
+    "company": ""
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "manifest_generated_at": ""
+}
