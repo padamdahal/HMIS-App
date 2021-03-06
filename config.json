@@ -1,0 +1,47 @@
+{
+	"todayReportingSummary": {
+		"config": {
+			"title": "Reporting Status",
+			"dx": "u1Ddilng3F5.EXPECTED_REPORTS;u1Ddilng3F5.ACTUAL_REPORTS",
+			"pe": "TODAY",
+			"rows": ["Organisation unit"],
+			"cols": ["Period","Data"],
+			"aggregator": "sum",
+			"visualizationType": "",
+			"category": "reporting",
+			"yaxis":{"title":"Number"},
+			"xaxis":{"title":"aaa"},
+			"cssClass": "col-md-12"
+		}
+	},
+	"vaccinatedSummary": {
+		"config": {
+			"title": "Vaccinated Summary",
+			"dx": "cOhZAOAHJZd",
+			"pe": "TODAY;YESTERDAY",
+			"rows": ["Organisation unit"],
+			"cols": ["Period","Data"],
+			"aggregator": "sum",
+			"visualizationType": "",
+			"category": "reporting",
+			"yaxis":{"title":"Period"},
+			"xaxis":{"title":"Total Vaccinated"},
+			"cssClass": "col-md-6"
+		}
+	},
+	"aefiSummary": {
+		"config": {
+			"title": "AEFI Summary",
+			"dx": "u2juuqreETO.AyQwIY0NmSD;u2juuqreETO.GjMOpblqjFg",
+			"pe": "TODAY;YESTERDAY",
+			"rows": ["Organisation unit"],
+			"cols": ["Period","Data"],
+			"aggregator": "sum",
+			"visualizationType": "",
+			"category": "reporting",
+			"yaxis":{"title":"Period"},
+			"xaxis":{"title":"Total Vaccinated"},
+			"cssClass": "col-md-6"
+		}
+	}
+}

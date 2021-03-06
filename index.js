@@ -33,6 +33,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 	
 	$("#reportDateNp").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
+		maxDate: "0d",
 		yearRange: '-120:+0',
 		duration: "fast",
 	    showAnim: "fadeIn",
