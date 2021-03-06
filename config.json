@@ -19,7 +19,7 @@
 		"config": {
 			"title": "Vaccinated Summary",
 			"dx": "cOhZAOAHJZd",
-			"pe": "TODAY;YESTERDAY",
+			"pe": "TODAY;YESTERDAY;THIS_YEAR",
 			"rows": ["Organisation unit"],
 			"cols": ["Period","Data"],
 			"hide":[],
@@ -35,7 +35,7 @@
 		"config": {
 			"title": "AEFI Summary",
 			"dx": "u2juuqreETO.AyQwIY0NmSD;u2juuqreETO.GjMOpblqjFg",
-			"pe": "TODAY;YESTERDAY",
+			"pe": "TODAY;YESTERDAY;THIS_YEAR",
 			"rows": ["Organisation unit"],
 			"cols": ["Period","Data"],
 			"hide":[],
@@ -51,7 +51,7 @@
 		"config": {
 			"title": "Vaccination Sessions",
 			"dx": "u2juuqreETO.AyQwIY0NmSD;u2juuqreETO.GjMOpblqjFg",
-			"pe": "TODAY;YESTERDAY",
+			"pe": "TODAY;YESTERDAY;THIS_YEAR",
 			"rows": ["Organisation unit"],
 			"cols": ["Period","Data"],
 			"hide":[],
@@ -67,7 +67,7 @@
 		"config": {
 			"title": "Vaccine Expenditure",
 			"dx": "u2juuqreETO.AyQwIY0NmSD;u2juuqreETO.GjMOpblqjFg",
-			"pe": "TODAY;YESTERDAY",
+			"pe": "TODAY;YESTERDAY;THIS_YEAR",
 			"rows": ["Organisation unit"],
 			"cols": ["Period","Data"],
 			"hide":[],
