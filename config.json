@@ -23,7 +23,7 @@
 			"cols": ["Period","Data"],
 			"aggregator": "sum",
 			"visualizationType": "",
-			"category": "reporting",
+			"category": "data",
 			"yaxis":{"title":"Period"},
 			"xaxis":{"title":"Total Vaccinated"},
 			"cssClass": "col-md-6"
@@ -38,9 +38,40 @@
 			"cols": ["Period","Data"],
 			"aggregator": "sum",
 			"visualizationType": "",
-			"category": "reporting",
+			"category": "data",
 			"yaxis":{"title":"Period"},
 			"xaxis":{"title":"Total Vaccinated"},
+			"cssClass": "col-md-6"
+		}
+	},
+	"sessionSummary": {
+		"config": {
+			"title": "Vaccination Sessions",
+			"dx": "u2juuqreETO.AyQwIY0NmSD;u2juuqreETO.GjMOpblqjFg",
+			"pe": "TODAY;YESTERDAY",
+			"rows": ["Organisation unit"],
+			"cols": ["Period","Data"],
+			"aggregator": "sum",
+			"visualizationType": "",
+			"category": "data",
+			"yaxis":{"title":"Period"},
+			"xaxis":{"title":"Total Vaccinated"},
+			"cssClass": "col-md-6"
+		}
+	},
+	,
+	"expenditureSummary": {
+		"config": {
+			"title": "Vaccination Expenditure",
+			"dx": "u2juuqreETO.AyQwIY0NmSD;u2juuqreETO.GjMOpblqjFg",
+			"pe": "TODAY;YESTERDAY",
+			"rows": ["Organisation unit"],
+			"cols": ["Period","Data"],
+			"aggregator": "sum",
+			"visualizationType": "",
+			"category": "data",
+			"yaxis":{"title":"Period"},
+			"xaxis":{"title":"Vials"},
 			"cssClass": "col-md-6"
 		}
 	}
