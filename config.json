@@ -61,7 +61,7 @@
 	},
 	"expenditureSummary": {
 		"config": {
-			"title": "Vaccination Expenditure",
+			"title": "Vaccine Expenditure",
 			"dx": "u2juuqreETO.AyQwIY0NmSD;u2juuqreETO.GjMOpblqjFg",
 			"pe": "TODAY;YESTERDAY",
 			"rows": ["Organisation unit"],
