@@ -6,7 +6,7 @@
 			"pe": "TODAY",
 			"rows": ["Organisation unit"],
 			"cols": ["Period","Data"],
-			"hide":["rowTotal"],
+			"hide":["rowTotal","colTotal"],
 			"aggregator": "sum",
 			"visualizationType": "",
 			"category": "reporting",
