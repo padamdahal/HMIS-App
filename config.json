@@ -2,7 +2,7 @@
 	"todayReportingSummary": {
 		"config": {
 			"title": "Reporting Status",
-			"dx": "u1Ddilng3F5.EXPECTED_REPORTS;u1Ddilng3F5.ACTUAL_REPORTS",
+			"dx": "u1Ddilng3F5.EXPECTED_REPORTS;u1Ddilng3F5.ACTUAL_REPORTS;u1Ddilng3F5.REPORTING_RATE;u1Ddilng3F5.REPORTING_RATE_ON_TIME",
 			"pe": "TODAY",
 			"rows": ["Organisation unit"],
 			"cols": ["Period","Data"],
