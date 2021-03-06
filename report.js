@@ -37,6 +37,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 			}
 			ouId = ouId+";LEVEL-"+(ouLevel);
 			$("#selectedOrgUnit").html(selectedOrgUnitName);
+			$("#visualization").load('https://cdn.jsdelivr.net/gh/padamdahal/HMIS-App@master/report-parts.html');
 			getReport(ouId, reportType);
 		});
 	});
@@ -52,7 +53,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 	
 	function getReport(ouid, reportType){
 		var dx;
-		$.getJSON("config.json", function(configs) {
+		$.getJSON("https://cdn.jsdelivr.net/gh/padamdahal/HMIS-App@master/config.json", function(configs) {
 			//$("#visualization").empty();
 			$(".card-body").empty();
 			$(".card-body").html("<img src='pulse.gif' style='height:50px;margin:10px;' />");
