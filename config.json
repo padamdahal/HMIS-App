@@ -59,7 +59,6 @@
 			"cssClass": "col-md-6"
 		}
 	},
-	,
 	"expenditureSummary": {
 		"config": {
 			"title": "Vaccination Expenditure",
