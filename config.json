@@ -24,7 +24,7 @@
 			"cols": ["Organisation unit"],
 			"hide":["rowTotal","colTotal"],
 			"aggregator": "sum",
-			"visualizationType": "Bar Chart",
+			"visualizationType": "",
 			"category": "reporting",
 			"yaxis":{"title":"Number"},
 			"xaxis":{"title":"aaa"},
