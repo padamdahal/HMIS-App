@@ -21,7 +21,7 @@
 			"dx": "u1Ddilng3F5.REPORTING_RATE;u1Ddilng3F5.REPORTING_RATE_ON_TIME",
 			"pe": "TODAY",
 			"rows": ["Organisation unit"],
-			"cols": ["Data","Period"],
+			"cols": ["Period","Data"],
 			"hide":["rowTotal","colTotal"],
 			"aggregator": "sum",
 			"visualizationType": "",
