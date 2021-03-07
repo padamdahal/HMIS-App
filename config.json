@@ -49,8 +49,8 @@
 	},
 	"sessionSummary": {
 		"config": {
-			"title": "Vaccination Sessions",
-			"dx": "u2juuqreETO.AyQwIY0NmSD;u2juuqreETO.GjMOpblqjFg",
+			"title": "Vaccination Sessions and Expenditure",
+			"dx": "DUGbjlfcV0e;EBkkIg9azVn",
 			"pe": "TODAY;YESTERDAY;THIS_YEAR",
 			"rows": ["Organisation unit"],
 			"cols": ["Data", "Period"],
