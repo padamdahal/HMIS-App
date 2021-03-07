@@ -62,21 +62,5 @@
 			"xaxis":{"title":"Total Vaccinated"},
 			"cssClass": "col-md-6"
 		}
-	},
-	"expenditureSummary": {
-		"config": {
-			"title": "Vaccine Expenditure",
-			"dx": "u2juuqreETO.AyQwIY0NmSD;u2juuqreETO.GjMOpblqjFg",
-			"pe": "TODAY;YESTERDAY;THIS_YEAR",
-			"rows": ["Organisation unit"],
-			"cols": ["Data","Period"],
-			"hide":[],
-			"aggregator": "sum",
-			"visualizationType": "",
-			"category": "data",
-			"yaxis":{"title":"Period"},
-			"xaxis":{"title":"Vials"},
-			"cssClass": "col-md-6"
-		}
 	}
 }
