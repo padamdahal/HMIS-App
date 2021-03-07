@@ -24,7 +24,7 @@
 			"cols": ["Period","Data"],
 			"hide":["rowTotal","colTotal"],
 			"aggregator": "sum",
-			"visualizationType": "",
+			"visualizationType": "Bar Chart",
 			"category": "reporting",
 			"yaxis":{"title":"Number"},
 			"xaxis":{"title":"aaa"},
