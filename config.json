@@ -3,7 +3,7 @@
 		"config": {
 			"title": "Reporting Status (Expected vs Actual)",
 			"dx": "u1Ddilng3F5.EXPECTED_REPORTS;u1Ddilng3F5.ACTUAL_REPORTS",
-			"pe": "TODAY",
+			"pe": "TODAY;LAST_3_DAYS",
 			"rows": ["Organisation unit"],
 			"cols": ["Period","Data"],
 			"hide":["rowTotal"],
@@ -19,7 +19,7 @@
 		"config": {
 			"title": "Reporting Rates",
 			"dx": "u1Ddilng3F5.REPORTING_RATE;u1Ddilng3F5.REPORTING_RATE_ON_TIME",
-			"pe": "TODAY",
+			"pe": "TODAY;LAST_3_DAYS",
 			"rows": ["Organisation unit"],
 			"cols": ["Period","Data"],
 			"hide":["rowTotal","colTotal"],
