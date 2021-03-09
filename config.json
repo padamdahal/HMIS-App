@@ -1,4 +1,20 @@
 {
+	"totalVaccinated": {
+		"config": {
+			"title": "",
+			"dx": "cOhZAOAHJZd",
+			"pe": "THIS_YEAR",
+			"rows": [],
+			"cols": [],
+			"hide":[],
+			"aggregator": "",
+			"visualizationType": "number",
+			"category": "reporting",
+			"yaxis":{"title":""},
+			"xaxis":{"title":""},
+			"cssClass": ""
+		}
+	},
 	"todayReportingCount": {
 		"config": {
 			"title": "Reporting Status (Expected vs Actual)",
