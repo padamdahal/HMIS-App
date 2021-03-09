@@ -134,5 +134,22 @@
 			"xaxis":{"title":"Total Vaccinated"},
 			"cssClass": "col-md-6"
 		}
+	},
+	"sessionsByDistrict": {
+		"config": {
+			"title": "Vaccination Sessions by Districts",
+			"dx": "DUGbjlfcV0e",
+			"pe": "THIS_YEAR",
+			"ouLevel": "LEVEL-3",
+			"rows": ["Organisation unit"],
+			"cols": ["Data", "Period"],
+			"hide":["rowTotal"],
+			"aggregator": "sum",
+			"visualizationType": "",
+			"category": "data",
+			"yaxis":{"title":"Period"},
+			"xaxis":{"title":"Total Vaccinated"},
+			"cssClass": "col-md-6"
+		}
 	}
 }
