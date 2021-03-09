@@ -16,6 +16,40 @@
 			"cssClass": ""
 		}
 	},
+	"totalSessions": {
+		"config": {
+			"title": "",
+			"dx": "DUGbjlfcV0e",
+			"pe": "THIS_YEAR",
+			"ouLevel": "selected",
+			"rows": [],
+			"cols": [],
+			"hide":[],
+			"aggregator": "",
+			"visualizationType": "number",
+			"category": "reporting",
+			"yaxis":{"title":""},
+			"xaxis":{"title":""},
+			"cssClass": ""
+		}
+	},
+	"totalAefi": {
+		"config": {
+			"title": "",
+			"dx": "u2juuqreETO",
+			"pe": "THIS_YEAR",
+			"ouLevel": "selected",
+			"rows": [],
+			"cols": [],
+			"hide":[],
+			"aggregator": "",
+			"visualizationType": "number",
+			"category": "reporting",
+			"yaxis":{"title":""},
+			"xaxis":{"title":""},
+			"cssClass": ""
+		}
+	},
 	"todayReportingCount": {
 		"config": {
 			"title": "Reporting Status (Expected vs Actual)",
