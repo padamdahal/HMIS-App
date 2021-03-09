@@ -72,7 +72,7 @@
 			"title": "Reporting Rates",
 			"dx": "u1Ddilng3F5.REPORTING_RATE;u1Ddilng3F5.REPORTING_RATE_ON_TIME",
 			"pe": "TODAY;LAST_3_DAYS",
-			"ouLevel": "subLevel",
+			"ouLevel": "+subLevel",
 			"rows": ["Organisation unit"],
 			"cols": ["Period","Data"],
 			"hide":["rowTotal","colTotal"],
