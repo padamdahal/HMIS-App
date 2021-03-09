@@ -145,7 +145,7 @@
 			"cols": ["Data", "Period"],
 			"hide":["rowTotal"],
 			"aggregator": "sum",
-			"visualizationType": "",
+			"visualizationType": "map",
 			"category": "data",
 			"yaxis":{"title":"Period"},
 			"xaxis":{"title":"Total Vaccinated"},
