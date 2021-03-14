@@ -104,14 +104,12 @@ $.getJSON('manifest.webapp').done(manifest => {
 						});
 						
 						if(config.hide.includes('colTotal')){
-							console.log("hide colTotal");
 							$("#"+name+" table th.pvtColTotalLabel").css('display','none');
 							$("#"+name+" table td.colTotal").css('display','none');
 							$("#"+name+" table td.pvtGrandTotal").css('display','none');
 						}
 						
 						if(config.hide.includes('rowTotal')){
-							console.log("hide rowTotal");
 							$("#"+name+" table th.pvtRowTotalLabel").css('display','none');
 							$("#"+name+" table td.rowTotal").css('display','none');
 							$("#"+name+" table td.pvtGrandTotal").css('display','none');
