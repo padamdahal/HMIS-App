@@ -206,7 +206,7 @@
 	"allDataDownload":{
 		"config": {
 			"title": "All Data Download",
-			"dx": "u2juuqreETO.GjMOpblqjFg;u2juuqreETO.AyQwIY0NmSD;EBkkIg9azVn.HllvX50cXC0;cOhZAOAHJZd.HllvX50cXC0;DUGbjlfcV0e.HllvX50cXC0",
+			"dx": "u2juuqreETO.GjMOpblqjFg;u2juuqreETO.AyQwIY0NmSD;EBkkIg9azVn;cOhZAOAHJZd;DUGbjlfcV0e",
 			"pe": "20210306;20210307;20210308;20210309;20210310;20210311;20210312;20210313;20210314",
 			"ouLevel": "LEVEL-4",
 			"rows": ["Organisation unit"],
