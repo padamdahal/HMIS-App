@@ -168,5 +168,26 @@
 			"xaxis":{"title":"Total Vaccinated"},
 			"cssClass": "col-md-6"
 		}
+	},
+	"vaccinatedByCategory":{
+		"config": {
+			"title": "COVID-19 Vaccination by Category",
+			"dx": "qPk6DrYXdJq%26dimension=hKCDeHl56jR:mMUJPuUTeb4;gk5CrQa9AQz;hNFtQ8o4x4p;CsAwvU6Ne12;pWcKbzrJTk3;vMFtbRjuVAj;I4pWA1rilwJ;Xlms8INR3Hz;D9Y9supqZVW;bwOqLrLuANV;CeWg3zxVxeB;ajMweI9qWip;KIUebzfZoOA;lETOaawTzmx;icHvkIaBxw3;DSpMPaFgmGV",
+			"pe": "THIS_YEAR",
+			"ouLevel": "+subLevel",
+			"rows": ["Organisation unit"],
+			"cols": ["Data", "COVID - Target group for Phase 2 (A)"],
+			"hide":["rowTotal"],
+			"aggregator": "sum",
+			"visualizationType": "",
+			"category": "data",
+			"yaxis":{"title":"Period"},
+			"xaxis":{"title":"Total Vaccinated"},
+			"cssClass": "col-md-6"
+		}
 	}
+	
+	
+	
+	
 }
