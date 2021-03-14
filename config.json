@@ -211,7 +211,7 @@
 			"ouLevel": "LEVEL-4",
 			"rows": ["Organisation unit"],
 			"cols": ["Period","Data"],
-			"hide":[],
+			"hide":["rowTotal","colTotal"],
 			"aggregator": "sum",
 			"visualizationType": "",
 			"category": "data",
