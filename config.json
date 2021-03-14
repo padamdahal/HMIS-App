@@ -155,7 +155,7 @@
 	"consolidatedReport":{
 		"config": {
 			"title": "COVID-19 Vaccination Consolidated Report",
-			"dx": "vCJwueVynrO.fVxVJWNG0JR;vCJwueVynrO.WsRblSSX1T9;qPk6DrYXdJq.SZufv5xDzDQ;qPk6DrYXdJq.e8qM6nj5j9j;qPk6DrYXdJq.hiIm1WXrq4L;qPk6DrYXdJq.oE1cxmipiWr;qPk6DrYXdJq.m1EoN8DmWb6;qPk6DrYXdJq.Kd87kTtJ4aL;qPk6DrYXdJq.eqiRL9BvMDT;qPk6DrYXdJq.QhE6VsskMaW;qPk6DrYXdJq.SzXEVWH7KT7;qPk6DrYXdJq.Rlhg8tMmzG9;qPk6DrYXdJq.UkC4TM7JHDe;qPk6DrYXdJq.elQf4qjq4HU;qPk6DrYXdJq.rzVzvzTSKVw;qPk6DrYXdJq.jdqbHQpJtw2;qPk6DrYXdJq.z9jHL2k6bJL;qPk6DrYXdJq.Roy0Nq4xv4y;yCXPHtYzxBw.DVa2YuOje3W;yCXPHtYzxBw.nidu7NH8IkX",
+			"dx": "qPk6DrYXdJq&dimension=co",
 			"pe": "THIS_YEAR",
 			"ouLevel": "+subLevel",
 			"rows": ["Organisation unit"],
