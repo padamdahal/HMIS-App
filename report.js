@@ -170,9 +170,8 @@ $.getJSON('manifest.webapp').done(manifest => {
 			};
 			info.addTo(map);
 			
-
-			// get color depending on population density value
 			/*
+			// get color depending on population density value
 			function getColor(value) {
 				var d = value;
 				if(d == 0){
