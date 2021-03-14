@@ -169,7 +169,7 @@
 	},
 	"consolidatedReportingStatus":{
 		"config": {
-			"title": "COVID-19 Vaccination Consolidated Report",
+			"title": "Consolidated Reporting Status",
 			"dx": "PAdc6DELYEQ.ACTUAL_REPORTS",
 			"pe": "THIS_YEAR",
 			"ouLevel": "subLevel",
