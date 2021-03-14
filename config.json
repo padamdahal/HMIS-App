@@ -152,6 +152,19 @@
 			"cssClass": "col-md-6"
 		}
 	},
+	"consolidatedReportingStatus":{
+		"config": {
+			"title": "COVID-19 Vaccination Consolidated Report",
+			"dx": "PAdc6DELYEQ.ACTUAL_REPORTS",
+			"pe": "THIS_YEAR",
+			"ouLevel": "subLevel",
+			"rows": ["Organisation unit"],
+			"cols": ["Period", "Data"],
+			"hide":["rowTotal"],
+			"aggregator": "sum",
+			"visualizationType": ""
+		}
+	},
 	"consolidatedReport":{
 		"config": {
 			"title": "COVID-19 Vaccination Consolidated Report",
