@@ -243,25 +243,6 @@ $.getJSON('manifest.webapp').done(manifest => {
 					renderer: heatmap
 				  });
 				  $(".ui-dialog-title").html(e.target.feature.properties.TARGET);
-				
-				/*map.fitBounds(e.target.getBounds());
-				//console.log(e);
-				if (e.pointsLayer != null) {
-					map.removeLayer(e.pointsLayer);
-				}
-				var district_municipality;
-				$.ajax({
-					url: 'data/municipalities.json'
-				}).done(function(data) {					
-					district_municipality = L.geoJson(data, {
-						style: style,
-						onEachFeature: onEachFeature,
-						filter: function(feature, layer) {
-							return (feature.properties.DISTRICT == e.target.feature.properties.TARGET);
-						}
-					}).addTo(map);
-				});	
-				*/
 			}
 
 			function onEachFeature(feature, layer) {
@@ -321,8 +302,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 		event.preventDefault();
 		$('.tab-active').removeClass('tab-active');
 		$(this).parent().addClass('tab-active');
-		$('.tabs-stage div:first').hide();
-		console.log($(this).attr('href'));
+		$('.tabs-stage div').hide();
 		$($(this).attr('href')).show();
 		$($(this).attr('href')+" div").show();
 	});
