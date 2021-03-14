@@ -317,7 +317,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 	}
 	
 	// Change tab class and display content
-	$('.tabs-nav a').on('click', function (event) {
+	$('body').on('click', '.tabs-nav a', function (event) {
 		event.preventDefault();
     
 		$('.tab-active').removeClass('tab-active');
@@ -325,7 +325,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 		$('.tabs-stage div').hide();
 		$($(this).attr('href')).show();
 	});
-	$('.tabs-nav a:first').trigger('click'); // Default
+	//$('body .tabs-nav a:first').trigger('click'); // Default
 	
 }).fail(error => {
 	console.warn('Failed to get manifest:', error);
