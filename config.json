@@ -185,9 +185,22 @@
 			"xaxis":{"title":"Total Vaccinated"},
 			"cssClass": "col-md-6"
 		}
+	},
+	"aefiByType":{
+		"config": {
+			"title": "AEFI",
+			"dx": "vCJwueVynrO%26dimension=sSlIfkLpKNq:W6lGSrXrqk6;iVYwbcgBOZj",
+			"pe": "THIS_YEAR",
+			"ouLevel": "subLevel",
+			"rows": ["Organisation unit"],
+			"cols": ["Data", "COVID-19 Vaccine AEFI types"],
+			"hide":[],
+			"aggregator": "sum",
+			"visualizationType": "",
+			"category": "data",
+			"yaxis":{"title":"Period"},
+			"xaxis":{"title":"Total Vaccinated"},
+			"cssClass": "col-md-6"
+		}
 	}
-	
-	
-	
-	
 }
