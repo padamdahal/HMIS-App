@@ -159,7 +159,7 @@
 			"pe": "THIS_YEAR",
 			"ouLevel": "+subLevel",
 			"rows": ["Organisation unit"],
-			"cols": ["Data", "Period"],
+			"cols": ["Data", "Gender"],
 			"hide":["rowTotal"],
 			"aggregator": "sum",
 			"visualizationType": "",
