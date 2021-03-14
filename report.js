@@ -58,7 +58,8 @@ $.getJSON('manifest.webapp').done(manifest => {
 			$.each(configs, function(key, config){
 				var name = key;
 				var config = config.config;
-				$("#"+name+"-title").html(config.title);
+				var titleWithDownloadLink = config.title+" <a style='margin-left:15px;' title='Download Data' href='#' class='download' target="+name+"><img src='download.png' style='width:20px;'/></a>";
+				$("#"+name+"-title").html(titleWithDownloadLink);
 				
 				if(config.ouLevel == 'subLevel' && ouLevel <= 3){
 					ou = ouId+";LEVEL-"+(ouLevel+1);
@@ -81,10 +82,6 @@ $.getJSON('manifest.webapp').done(manifest => {
 						$("#"+name).html(d);
 					}else if (config.visualizationType == 'map'){
 						mapify(name, config, data);
-					}else if(config.visualizationType == 'downloadExcel'){
-						var downloadUrl = "/hmisrest/covacdaily.php?type=downloadExcel&ou="+ou+"&dx="+config.dx+"&pe="+config.pe
-						var html = "<a href='"+downloadUrl+"' target='_blank'>Download</a>";
-						$("#"+name).html(html);
 					}else{
 						var renderers = $.pivotUtilities.plotly_renderers[config.visualizationType];
 						var width = $("body #"+name).width();
@@ -300,9 +297,6 @@ $.getJSON('manifest.webapp').done(manifest => {
 			legend.addTo(map);
 	}
 	
-	function download(){
-		//http://hmis.gov.np/hmisadditional/api/29/analytics.xls?dimension=dx:u2juuqreETO.GjMOpblqjFg;u2juuqreETO.AyQwIY0NmSD;EBkkIg9azVn.HllvX50cXC0;cOhZAOAHJZd.HllvX50cXC0;DUGbjlfcV0e.HllvX50cXC0&dimension=pe:20210306;20210307;20210308;20210309;20210310;20210311;20210312;20210313;20210314&dimension=ou:cCTQiGkKcTk&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe
-	}
 	// Change tab class and display content
 	$('body').on('click', '.tabs-nav a', function (event) {
 		event.preventDefault();
@@ -312,6 +306,19 @@ $.getJSON('manifest.webapp').done(manifest => {
 		$($(this).attr('href')).show();
 		$($(this).attr('href')+" div").show();
 	});
+	
+	$('body').on('click', '.download', function (event) {
+		event.preventDefault();
+		var target = $(this).attr('target');
+		$("#"+target+" table").table2excel({
+			exclude: ".noExl", // exclude CSS class
+			name: "Data",
+			filename: target+"-Export", //do not include extension
+			fileext: ".xls", // file extension
+			preserveColors: true
+		});
+	});
+	
 	
 }).fail(error => {
 	console.warn('Failed to get manifest:', error);
