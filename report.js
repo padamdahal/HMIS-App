@@ -81,6 +81,10 @@ $.getJSON('manifest.webapp').done(manifest => {
 						$("#"+name).html(d);
 					}else if (config.visualizationType == 'map'){
 						mapify(name, config, data);
+					}else if(config.visualizationType == 'downloadExcel'){
+						var downloadUrl = "/hmisrest/covacdaily.php?type=downloadExcel&ou="+ou+"&dx="+config.dx+"&pe="+config.pe
+						var html = "<a href='"+downloadUrl+"' target='_blank'>Download</a>";
+						$("#"+name).html(html);
 					}else{
 						var renderers = $.pivotUtilities.plotly_renderers[config.visualizationType];
 						var width = $("body #"+name).width();
@@ -296,6 +300,9 @@ $.getJSON('manifest.webapp').done(manifest => {
 			legend.addTo(map);
 	}
 	
+	function download(){
+		//http://hmis.gov.np/hmisadditional/api/29/analytics.xls?dimension=dx:u2juuqreETO.GjMOpblqjFg;u2juuqreETO.AyQwIY0NmSD;EBkkIg9azVn.HllvX50cXC0;cOhZAOAHJZd.HllvX50cXC0;DUGbjlfcV0e.HllvX50cXC0&dimension=pe:20210306;20210307;20210308;20210309;20210310;20210311;20210312;20210313;20210314&dimension=ou:cCTQiGkKcTk&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe
+	}
 	// Change tab class and display content
 	$('body').on('click', '.tabs-nav a', function (event) {
 		event.preventDefault();
