@@ -177,7 +177,7 @@
 			"ouLevel": "+subLevel",
 			"rows": ["Organisation unit"],
 			"cols": ["Data", "COVID - Target group for Phase 2 (A)"],
-			"hide":["rowTotal"],
+			"hide":[],
 			"aggregator": "sum",
 			"visualizationType": "",
 			"category": "data",
