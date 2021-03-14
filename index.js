@@ -33,6 +33,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 	
 	$("#reportDateNp").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
+		minDate: "-3d",
 		maxDate: "0d",
 		yearRange: '-120:+0',
 		duration: "fast",
@@ -180,7 +181,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 		if(hmisOu.includes(hf)){
 			hf = hmisAdditionalOu[hmisOu.indexOf(hf)];
 		}
-		$("#reportLink").attr("href", "report.html?ouid="+hf);
+		$("#reportLink").attr("href", "report.html");
 		
 	});
 	
@@ -324,22 +325,22 @@ $.getJSON('manifest.webapp').done(manifest => {
 	}
 	
 	// Check if the current page the report page
-	var path = window.location.pathname;
-	var page = path.split("/").pop();
+	//var path = window.location.pathname;
+	//var page = path.split("/").pop();
 	
-	if(page == 'report.html'){
-		var urlParams = new URLSearchParams(window.location.search);
+	//if(page == 'report.html'){
+	//	var urlParams = new URLSearchParams(window.location.search);
 
-		if(urlParams.has('ouid') == true){
-			if(urlParams.get('ouid') != null && urlParams.get('ouid') != "" ){
-				getReport(urlParams.get('ouid'));
-			}else{
-				alert("Parameter value missing");
-			}
-		}else{
-			alert("Required parameter missing");
-		}
-	}
+	//	if(urlParams.has('ouid') == true){
+	//		if(urlParams.get('ouid') != null && urlParams.get('ouid') != "" ){
+	//			getReport(urlParams.get('ouid'));
+	//		}else{
+	//			alert("Parameter value missing");
+	//		}
+	//	}else{
+	//		alert("Required parameter missing");
+	//	}
+	//}
 	
 }).fail(error => {
 	console.warn('Failed to get manifest:', error);
