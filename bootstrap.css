@@ -58,8 +58,6 @@ ul, li, div {
     outline: 0;
     padding: 0;
     vertical-align: baseline;
-    font: 13px/20px "Droid Sans", Arial, "Helvetica Neue", "Lucida Grande", sans-serif;
-    text-shadow: 0 1px 0 hsl(0, 100%, 100%);
 }
 li {
     display: list-item;
@@ -72,9 +70,6 @@ li {
 }
 .tabs-nav li:first-child a {
     border-right: 0;
-    -moz-border-radius-topleft: 6px;
-    -webkit-border-top-left-radius: 6px;
-    border-top-left-radius: 6px;
 }
 .tabs-nav .tab-active a {
     background: hsl(0, 100%, 100%);
@@ -99,21 +94,16 @@ li {
     float: left;
 }
 .tabs-stage {
-    border: 1px solid hsl(210, 6%, 79%);
+    /*border: 1px solid hsl(210, 6%, 79%);
     -webkit-border-radius: 0 0 6px 6px;
     -moz-border-radius: 0 0 6px 6px;
     -ms-border-radius: 0 0 6px 6px;
     -o-border-radius: 0 0 6px 6px;
     border-radius: 0 0 6px 6px;
-    border-top: 0;
+    border-top: 0;*/
     clear: both;
     margin-bottom: 20px;
     position: relative;
     top: -1px;
     width: 281px;
-}
-.tabs-stage p {
-    margin: 0;
-    padding: 20px;
-    color: hsl(0, 0%, 33%);
 }

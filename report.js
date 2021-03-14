@@ -319,11 +319,12 @@ $.getJSON('manifest.webapp').done(manifest => {
 	// Change tab class and display content
 	$('body').on('click', '.tabs-nav a', function (event) {
 		event.preventDefault();
-    
 		$('.tab-active').removeClass('tab-active');
 		$(this).parent().addClass('tab-active');
-		$('.tabs-stage div').hide();
+		$('.tabs-stage div:first').hide();
+		console.log($(this).attr('href'));
 		$($(this).attr('href')).show();
+		$($(this).attr('href')+" div").show();
 	});
 	
 }).fail(error => {
