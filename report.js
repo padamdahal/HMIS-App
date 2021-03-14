@@ -322,7 +322,7 @@ $.getJSON('manifest.webapp').done(manifest => {
     
 		$('.tab-active').removeClass('tab-active');
 		$(this).parent().addClass('tab-active');
-		$('.tabs-stage div').hide();
+		$('.tabs-stage').hide();
 		$($(this).attr('href')).show();
 	});
 	//$('body .tabs-nav a:first').trigger('click'); // Default
