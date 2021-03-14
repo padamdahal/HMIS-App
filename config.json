@@ -160,7 +160,7 @@
 			"ouLevel": "+subLevel",
 			"rows": ["Organisation unit"],
 			"cols": ["Data", "Gender"],
-			"hide":["rowTotal"],
+			"hide":[],
 			"aggregator": "sum",
 			"visualizationType": "",
 			"category": "data",
