@@ -12,6 +12,7 @@
     <link href="bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://padamdahal.github.io/EWARS_DHIS2/ewars-dhis-assets/jquery.calendars.package-2.1.0/css/jquery.calendars.picker.css"> 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
 		
 	<!--script type="text/javascript" src="pivottable/jquery.min.js"></script>
 	<script type="text/javascript" src="pivottable/jquery-ui.min.js"></script-->
@@ -24,6 +25,7 @@
 	<script type="text/javascript" src="pivottablejs/c3_renderers.min.js"></script>
 	<!--script type="text/javascript" src="pivottablejs/gchart_renderers.min.js"></script-->
 	<script type="text/javascript" src="pivottablejs/plotly_renderers.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 	
 	<link type="text/css" rel="stylesheet" media="screen" href="../../../dhis-web-commons/javascripts/jQuery/ui/css/redmond/jquery-ui.css" />
 	<link type="text/css" rel="stylesheet" media="screen" href="../../../dhis-web-commons/css/light_blue/light_blue.css">
@@ -48,7 +50,7 @@
 	<script type="text/javascript" src="https://padamdahal.github.io/EWARS_DHIS2/ewars-dhis-assets/jquery.calendars.package-2.1.0/js/jquery.calendars.nepali.js"></script>
 	<script type="text/javascript" src="https://padamdahal.github.io/EWARS_DHIS2/ewars-dhis-assets/nepali.datepicker.v2.1.min.js"></script>
 	
-	<script type="text/javascript" src="report_consolidated.js"></script>
+	<script type="text/javascript" src="report.js"></script>
 	<script type="text/javascript" src="oumapping.js"></script>
   </head>
 
@@ -95,8 +97,8 @@
 			<div class="col-md-9">
 				<div class="row">
 					<div class="reportTypes" style="margin-bottom:5px;">
-						<div class="col-md-12" style="">
-							<h3 id="selectedOrgUnit"></h3>
+						<div class="col-md-12" style="padding-left:0;">
+							<h3 id="selectedOrgUnit" style="margin-top:0;"></h3>
 						</div>
 					</div>
 				</div>
