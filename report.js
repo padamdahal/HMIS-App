@@ -282,18 +282,13 @@ $.getJSON('manifest.webapp').done(manifest => {
 				var width = 25;
 				var height = 20;
 				var iconAnchor = null;
-								
-				if(feature.properties.TARGET == 'KATHMANDU'){
-					iconAnchor = [30, 20];
-				}
-				
 				if(labelData != 0){
 					var myIcon = L.divIcon({ 
 						iconSize: new L.Point(width, height), 
 						iconAnchor: iconAnchor,
 						html: display
 					});
-					if(selectedOrgUnitName!='Nepal')
+					if(selectedOrgUnitName != 'Nepal')
 					L.marker([layer._bounds.getCenter().lat,layer._bounds.getCenter().lng], {icon: myIcon}).addTo(map).bindPopup(feature.properties.TARGET+'<br/>'+labelData);
 				}
 			}
