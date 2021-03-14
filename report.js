@@ -277,9 +277,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 			}
 			
 			function addLabel(feature, layer){
-				
 				var labelData = getFeatureData(feature.properties.TARGET);
-				console.log(labelData);
 				var display = labelData;
 				var width = 25;
 				var height = 20;
