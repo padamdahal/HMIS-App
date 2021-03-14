@@ -297,7 +297,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 			legend.addTo(map);
 	}
 	
-	// Change tab class and display content
+	// Switch between tabs
 	$('body').on('click', '.tabs-nav a', function (event) {
 		event.preventDefault();
 		$('.tab-active').removeClass('tab-active');
@@ -307,14 +307,15 @@ $.getJSON('manifest.webapp').done(manifest => {
 		$($(this).attr('href')+" div").show();
 	});
 	
+	// Export data to excel
 	$('body').on('click', '.download', function (event) {
 		event.preventDefault();
 		var target = $(this).attr('target');
 		$("#"+target+" table").table2excel({
-			exclude: ".noExl", // exclude CSS class
+			//exclude: ".noExl",
 			name: "Data",
-			filename: target+"-Export", //do not include extension
-			fileext: ".xls", // file extension
+			filename: target+"-Export",
+			fileext: ".xls",
 			preserveColors: true
 		});
 	});
