@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>COVID-19 pandemic reporting and service utilization</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://padamdahal.github.io/EWARS_DHIS2/ewars-dhis-assets/jquery.calendars.package-2.1.0/css/jquery.calendars.picker.css"> 
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css">
+		
+	<!--script type="text/javascript" src="pivottable/jquery.min.js"></script>
+	<script type="text/javascript" src="pivottable/jquery-ui.min.js"></script-->
+	<script src="https://cdn.plot.ly/plotly-basic-latest.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <link rel="stylesheet" type="text/css" href="pivottablejs/pivot.css">
+    <script type="text/javascript" src="pivottablejs/pivot.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+	<script type="text/javascript" src="pivottablejs/c3_renderers.min.js"></script>
+	<!--script type="text/javascript" src="pivottablejs/gchart_renderers.min.js"></script-->
+	<script type="text/javascript" src="pivottablejs/plotly_renderers.min.js"></script>
+	
+	<link type="text/css" rel="stylesheet" media="screen" href="../../../dhis-web-commons/javascripts/jQuery/ui/css/redmond/jquery-ui.css" />
+	<link type="text/css" rel="stylesheet" media="screen" href="../../../dhis-web-commons/css/light_blue/light_blue.css">
+	<link type="text/css" rel="stylesheet" media="screen,print" href="../../../dhis-web-commons/css/widgets.css" />
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/underscore.min.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.util.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/periodType.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/date.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/jQuery/calendars/jquery.calendars.min.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/jQuery/calendars/jquery.calendars.plus.min.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.period.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/jQuery/calendars/jquery.calendars.picker.min.js?_rev=080a9f7"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.storage.ss.js?_rev=19841"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.storage.ls.js?_rev=19841"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.storage.idb.js?_rev=19841"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.storage.memory.js?_rev=19841"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.storage.js?_rev=19841"></script>
+	<script type="text/javascript" src="ouwt.js"></script>
+	
+	<script type="text/javascript" src="https://padamdahal.github.io/EWARS_DHIS2/ewars-dhis-assets/jquery.calendars.package-2.1.0/js/jquery.plugin.js"></script>
+	<script type="text/javascript" src="https://padamdahal.github.io/EWARS_DHIS2/ewars-dhis-assets/jquery.calendars.package-2.1.0/js/jquery.calendars.all.js"></script>
+	<script type="text/javascript" src="https://padamdahal.github.io/EWARS_DHIS2/ewars-dhis-assets/jquery.calendars.package-2.1.0/js/jquery.calendars.nepali.js"></script>
+	<script type="text/javascript" src="https://padamdahal.github.io/EWARS_DHIS2/ewars-dhis-assets/nepali.datepicker.v2.1.min.js"></script>
+	
+	<script type="text/javascript" src="report_consolidated.js"></script>
+	<script type="text/javascript" src="oumapping.js"></script>
+  </head>
+
+  <body>
+    <div class="container" style="margin-bottom:10px;margin-top:20px;width:90% !important">
+		<div class="row position-sticky" style="box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;padding:10px;">
+			<div style="float:left;">
+				<img src="https://dohs.gov.np/wp-content/uploads/2019/01/gov-logo.png" height="60"/>
+			</div>
+			<div style="color:#c50a17;padding:10px 0 0 10px;">
+				<h4>Integrated Health Information Management Section (IHIMS)</h4>
+			</div>
+		</div>
+	  
+		<div class="row" style="background:#337ab7;color:#fff;box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;">
+			<div class="col-md-9" style="padding-top:0">
+				<h3 style="padding-top:0;margin-top:10px">COVID-19 Vaccination Reporting System</h3>
+			</div>
+			<div class="col-md-3" style="padding-top:10px">
+				<a class="btn btn-success" href="/hmis" style="margin:0 3px 5px 0;">HMIS Home</a>
+				<a class="btn btn-warning" href="index.html" style="margin:0 3px 5px 0;">App Home</a>
+				<a class="btn btn-success" id="helplink" href="https://www.notion.so/COVID19-Vaccination-Monitoring-Reports-8a10e4168abb48eaba5bae0848ec20c9" target="_blank" style="margin:0 3px 5px 0;">Tutorial</a>
+			</div>
+		</div>
+
+		<hr/>
+		<div class="row">
+			<div class="col-md-3" style="">
+				<div class="sidebar" id="orgUnits">
+					<div>
+						<input id="searchField" type="text" placeholder="Search OrgUnit"/>
+						<i class="fa fa-search" style="padding:4px;"></i>
+					</div>
+					<div id="orgUnitTreeContainer">
+						<img id="ouwt_loader" src="../../../images/ajax-loader-bar.gif"/>
+						<div id="orgUnitTree" style="width:100%;height:530px;margin:10px 0">
+							<ul>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-9">
+				<div class="row">
+					<div class="reportTypes" style="margin-bottom:5px;">
+						<div class="col-md-12" style="">
+							<h3 id="selectedOrgUnit"></h3>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="visualization">
+					
+				</div>
+				</br>
+			</div>
+		</div>
+		</br>
+	</div>
+</body>
+<script>
+
+</script>
+</html>
