@@ -172,7 +172,7 @@
 			"title": "Consolidated Reporting Status",
 			"dx": "PAdc6DELYEQ.ACTUAL_REPORTS",
 			"pe": "THIS_YEAR",
-			"ouLevel": "subLevel",
+			"ouLevel": "LEVEL-6",
 			"rows": ["Organisation unit"],
 			"cols": ["Period", "Data"],
 			"hide":["rowTotal"],
