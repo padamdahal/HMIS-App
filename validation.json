@@ -1,6 +1,6 @@
 {
 	"catVsSex": {
-		"expression": "$('#qPk6DrYXdJq-eqiRL9BvMDT-val').val() + $('#qPk6DrYXdJq-SzXEVWH7KT7-val).val() + $('#qPk6DrYXdJq-Kd87kTtJ4aL-val').val() - $('#yCXPHtYzxBw-nidu7NH8IkX-val').val() - $('#yCXPHtYzxBw-DVa2YuOje3W-val').val()",
+		"expression": "$('#qPk6DrYXdJq-eqiRL9BvMDT-val').val() + $('#qPk6DrYXdJq-SzXEVWH7KT7-val').val() + $('#qPk6DrYXdJq-Kd87kTtJ4aL-val').val() - $('#yCXPHtYzxBw-nidu7NH8IkX-val').val() - $('#yCXPHtYzxBw-DVa2YuOje3W-val').val()",
 		"expectedResult": 0,
 		"errorMessage":"Category total must be equal to total by sex."
 	}
