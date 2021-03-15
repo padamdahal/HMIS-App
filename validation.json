@@ -5,7 +5,7 @@
 		"errorMessage":"Category total must be equal to total by sex."
 	},
 	"vaccineReceivedVsExpenditure": {
-		"expression": "parseInt($('#cEwLZM7c8bs-HllvX50cXC0-val').val()) - parseInt($('#sYa1vJtC2Xr-HllvX50cXC0-val').val())",
+		"expression": "parseInt($('#cEwLZM7c8bs-HllvX50cXC0-val').val()) - $('#sYa1vJtC2Xr-HllvX50cXC0-val').val()",
 		"expectedResult": [">=",0],
 		"errorMessage":"Vaccine expenditure must be less than or equal to vaccine received."
 	},
