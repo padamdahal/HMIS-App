@@ -33,7 +33,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 	
 	$("#reportDateNp").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
-		minDate: "-3d",
+		minDate: "-8d",
 		maxDate: "0d",
 		yearRange: '-120:+0',
 		duration: "fast",
@@ -66,6 +66,9 @@ $.getJSON('manifest.webapp').done(manifest => {
 	$("#reportDate").change(function(){
 		var pe = getPeriod();
 		var ouId = $("#orgUnit").val();
+		if(hmisOu.includes(ouId)){
+			ouId = hmisAdditionalOu[hmisOu.indexOf(ouId)];
+		}
 		var dataSet = $("#dataset").val();
 		$(".submitandmessage").hide();
 		if($("#dataset").val() != "" && $("#orgUnit").val() != ""){
@@ -76,7 +79,9 @@ $.getJSON('manifest.webapp').done(manifest => {
 	$("#dataset").change(function(){
 		var dataSet = $(this).val();
 		var ouId = $("#orgUnit").val();
-		
+		if(hmisOu.includes(ouId)){
+			ouId = hmisAdditionalOu[hmisOu.indexOf(ouId)];
+		}
 		if($("#reportDate").val() != "" && $("#reportDate").val() != 'undefined'){
 			var pe = getPeriod();
 			displayForm(pe, ouId, dataSet);
@@ -90,6 +95,9 @@ $.getJSON('manifest.webapp').done(manifest => {
 		var co = inputId.split('-')[1];
 		var ds = $("#dataset").val();
 		var ou = $("#orgUnit").val();
+		if(hmisOu.includes(ou)){
+			ou = hmisAdditionalOu[hmisOu.indexOf(ou)];
+		}
 		var pe = getPeriod();
 		
 		var dataValuesUrl = "/hmisrest/restservice.php?action=dataValues&type=plain";
@@ -127,45 +135,74 @@ $.getJSON('manifest.webapp').done(manifest => {
 			hf = hmisAdditionalOu[hmisOu.indexOf(hf)];
 		}
 		
-		if(reportDate != "" && hf !== "" && hf !== null){
-			
-			var completeJson = {
-				"completeDataSetRegistrations":[{
-					"dataSet":$("#dataset").val(),
-					"period":reportDate.substring(0, 4)+reportDate.substring(5, 7)+reportDate.substring(8, 10),
-					"organisationUnit":hf
-				}]
-			};
-			
-			// Send the POST request to the restservice
-			$.ajax({
-				type: "POST",
-				url: "/hmisrest/restservice.php?action=completeDataSetRegistrations",
-				data: JSON.stringify(completeJson),
-				dataType: "json",
-				beforeSend: function( xhr ) {
-					$("#loading").show();
-				},
-				success: function(data){
-					var msg = data.status;
-					if(msg == 'SUCCESS'){
-						msg = '<span style="color:green;font-wieght:bold">'+msg+'</span>';
-					}else if(msg == 'WARNING'){
-						msg = '<span style="color:orange;font-wieght:bold">'+msg+'</span>';
-					}
-					$("#statusmessage").html(msg);
-					$("#statusmessage").show();
-					$("#loading").hide();
-				}, failure: function(errMsg) {
-					alert(errMsg);
-					$("#statusmessage").html('<span style="color:red;font-wieght:bold">');
-					$("#statusmessage").show();
-					$("#loading").hide();
+		$.getJSON("https://raw.githubusercontent.com/padamdahal/HMIS-App/master/validation.json", function(validations) {
+			var failedValidaitons = {};
+			$.each(validations, function(key, validation){
+				
+				var expressionCompare = {
+					'==': function(a, b) { return a == b },
+					'>=': function(a, b) { return a >= b },
+					'<=': function(a, b) { return a <= b },
+					'>': function(a, b) { return a > b },
+					'<': function(a, b) { return a < b }
+				};
+				
+				var expression = eval(validation.expression);
+				var operator = validation.expectedResult[0];
+				var expectedResult = parseInt(validation.expectedResult[1]);
+				
+				if(expressionCompare[operator](expression, expectedResult) == false){
+					failedValidaitons[key] = validation.errorMessage;
 				}
 			});
-		}else{
-			alert("Either report date or health facility is missing.");
-		}
+
+			if(Object.keys(failedValidaitons).length > 0){
+				var consolidatedMessage = '';
+				$.each(failedValidaitons, function(key, message){
+					consolidatedMessage += message + "\n";
+				})
+				alert(consolidatedMessage);
+			}else{
+				if(reportDate != "" && hf !== "" && hf !== null){
+					var completeJson = {
+						"completeDataSetRegistrations":[{
+							"dataSet":$("#dataset").val(),
+							"period":reportDate.substring(0, 4)+reportDate.substring(5, 7)+reportDate.substring(8, 10),
+							"organisationUnit":hf
+						}]
+					};
+					
+					// Send the POST request to the restservice
+					$.ajax({
+						type: "POST",
+						url: "/hmisrest/restservice.php?action=completeDataSetRegistrations",
+						data: JSON.stringify(completeJson),
+						dataType: "json",
+						beforeSend: function( xhr ) {
+							$("#loading").show();
+						},
+						success: function(data){
+							var msg = data.status;
+							if(msg == 'SUCCESS'){
+								msg = '<span style="color:green;font-wieght:bold">'+msg+'</span>';
+							}else if(msg == 'WARNING'){
+								msg = '<span style="color:orange;font-wieght:bold">'+msg+'</span>';
+							}
+							$("#statusmessage").html(msg);
+							$("#statusmessage").show();
+							$("#loading").hide();
+						}, failure: function(errMsg) {
+							alert(errMsg);
+							$("#statusmessage").html('<span style="color:red;font-wieght:bold">');
+							$("#statusmessage").show();
+							$("#loading").hide();
+						}
+					});
+				}else{
+					alert("Either report date or health facility is missing.");
+				}
+			}
+		});
 	});
 	
 	// Select organization unit
@@ -322,26 +359,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 				console.log(errMsg);
 			}
 		});	
-	}
-	
-	// Check if the current page the report page
-	//var path = window.location.pathname;
-	//var page = path.split("/").pop();
-	
-	//if(page == 'report.html'){
-	//	var urlParams = new URLSearchParams(window.location.search);
-
-	//	if(urlParams.has('ouid') == true){
-	//		if(urlParams.get('ouid') != null && urlParams.get('ouid') != "" ){
-	//			getReport(urlParams.get('ouid'));
-	//		}else{
-	//			alert("Parameter value missing");
-	//		}
-	//	}else{
-	//		alert("Required parameter missing");
-	//	}
-	//}
-	
+	}	
 }).fail(error => {
 	console.warn('Failed to get manifest:', error);
 });
