@@ -10,12 +10,12 @@
 		"errorMessage":"Vaccine expenditure must be less than or equal to vaccine received."
 	},
 	"syringeReceivedVsExpenditure": {
-		"expression": "parseInt($('#aEEF46Gu2u9-HllvX50cXC0-val').val()) - parseInt($('#LxLf1WQG5d3-HllvX50cXC0-val').val())",,
+		"expression": "parseInt($('#aEEF46Gu2u9-HllvX50cXC0-val').val()) - parseInt($('#LxLf1WQG5d3-HllvX50cXC0-val').val())",
 		"expectedResult": [">=","0"],
 		"errorMessage":"Syringe expenditure must be less than or equal to syringe received."
 	},
 	"safetyBoxReceivedVsExpenditure": {
-		"expression": "parseInt($('#HMuSCDPuSKS-HllvX50cXC0-val').val()) - parseInt($('#A3NJtLkY3yE-HllvX50cXC0-val').val())",,
+		"expression": "parseInt($('#HMuSCDPuSKS-HllvX50cXC0-val').val()) - parseInt($('#A3NJtLkY3yE-HllvX50cXC0-val').val())",
 		"expectedResult": [">=","0"],
 		"errorMessage":"Safety box expenditure must be less than or equal to Safety box received."
 	}
