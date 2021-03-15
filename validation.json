@@ -1,0 +1,8 @@
+{
+	"catVsSex": {
+		"left": "$('#qPk6DrYXdJq-eqiRL9BvMDT-val') + $('#qPk6DrYXdJq-SzXEVWH7KT7-val) + $('#qPk6DrYXdJq-Kd87kTtJ4aL-val')",
+		"right":"$('#yCXPHtYzxBw-nidu7NH8IkX-val') + $('#yCXPHtYzxBw-DVa2YuOje3W-val')",
+		"operator": "=",
+		"message":"Category total must be equal to total by sex."
+	}
+}
