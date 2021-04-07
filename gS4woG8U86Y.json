@@ -140,7 +140,7 @@
 			"config": {
 					"title": "Vaccination Sessions by Districts",
 					"dx": "DUGbjlfcV0e",
-					"pe": ["2021-04-07","TODAY","THIS_YEAR"],
+					"pe": ["2021-04-07","TODAY"],
 					"ouLevel": "LEVEL-3",
 					"rows": ["Organisation unit"],
 					"cols": ["Data", "Period"],
