@@ -257,7 +257,7 @@
 			"config": {
 				"title": "Total Sessions (Phase 3)",
 				"dx": "DUGbjlfcV0e",
-				"pe": ["2021-04-07","TODAY","THIS_YEAR"],
+				"pe": ["2021-04-07","TODAY"],
 				"ouLevel": "selected",
 				"rows": [],
 				"cols": [],
