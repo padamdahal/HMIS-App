@@ -55,6 +55,9 @@ $.getJSON('manifest.webapp').done(manifest => {
 		
 		var ouId = $("#orgUnit").val();
 		
+		// Check if the same exists in another instance of DHIS2
+		checkOuId(ouId);
+		
 		if(hmisOu.includes(ouId)){
 			ouId = hmisAdditionalOu[hmisOu.indexOf(ouId)];
 		}
@@ -137,6 +140,7 @@ $.getJSON('manifest.webapp').done(manifest => {
 		
 		$.getJSON("https://raw.githubusercontent.com/padamdahal/HMIS-App/master/validation.json", function(validations) {
 			var failedValidaitons = {};
+			validations = validations[$("#dataset").val()];
 			$.each(validations, function(key, validation){
 				
 				var expressionCompare = {
@@ -359,7 +363,16 @@ $.getJSON('manifest.webapp').done(manifest => {
 				console.log(errMsg);
 			}
 		});	
-	}	
+	}
+	
+	function checkOuId(ouId){
+		// try to get the details from another instance firstChild
+		$.getJSON("/hmisadditional/api/organisationUnits/"+ouId+".json").done(ouDetail => {
+			console.log(ouDetail);
+		}).fail(function() {
+			console.log( "error" );
+		});
+	}
 }).fail(error => {
 	console.warn('Failed to get manifest:', error);
 });

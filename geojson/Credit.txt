@@ -1,0 +1,2 @@
+The source of the geoJSON file is Ministry of Federal Affairs and General Administration (MOFAGA).
+URL: https://www.sthaniya.gov.np/gis/
