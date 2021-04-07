@@ -250,7 +250,7 @@
 				"category": "reporting",
 				"yaxis":{"title":""},
 				"xaxis":{"title":""},
-				"cssClass": ""
+				"cssClass": "col-md-4"
 			}
 		},
 		"totalSessions": {
@@ -267,7 +267,7 @@
 				"category": "reporting",
 				"yaxis":{"title":""},
 				"xaxis":{"title":""},
-				"cssClass": ""
+				"cssClass": "col-md-4"
 			}
 		},
 		"totalAefi": {
@@ -284,7 +284,7 @@
 				"category": "reporting",
 				"yaxis":{"title":""},
 				"xaxis":{"title":""},
-				"cssClass": ""
+				"cssClass": "col-md-4"
 			}
 		},
 		"todayReportingCount": {
