@@ -238,8 +238,8 @@
 	"gS4woG8U86Y": {
 		"totalVaccinated": {
 			"config": {
-				"title": "",
-				"dx": "cOhZAOAHJZd",
+				"title": "Total Vaccinated (VeroCell)",
+				"dx": "QxHVoAQtc6N",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
 				"rows": [],
@@ -255,7 +255,7 @@
 		},
 		"totalSessions": {
 			"config": {
-				"title": "",
+				"title": "Total Sessions (Phase 3)",
 				"dx": "DUGbjlfcV0e",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
@@ -272,8 +272,8 @@
 		},
 		"totalAefi": {
 			"config": {
-				"title": "",
-				"dx": "u2juuqreETO",
+				"title": "Total AEFI (VeroCell)",
+				"dx": "ejrofcmdD3u",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
 				"rows": [],
@@ -324,7 +324,7 @@
 		"vaccinatedSummary": {
 			"config": {
 				"title": "Vaccinated Summary",
-				"dx": "cOhZAOAHJZd",
+				"dx": "QxHVoAQtc6N",
 				"pe": "20210307;20210308;20210309;20210310;20210311;20210312;20210313;20210314;20210315;20210316;20210317;20210318;20210319;20210320;20210321;20210322;20210323;TODAY;YESTERDAY;THIS_YEAR",
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
@@ -341,7 +341,7 @@
 		"aefiSummary": {
 			"config": {
 				"title": "AEFI Summary",
-				"dx": "u2juuqreETO.AyQwIY0NmSD;u2juuqreETO.GjMOpblqjFg",
+				"dx": "ejrofcmdD3u.AyQwIY0NmSD;ejrofcmdD3u.GjMOpblqjFg",
 				"pe": "TODAY;YESTERDAY;THIS_YEAR",
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
@@ -358,7 +358,7 @@
 		"sessionSummary": {
 			"config": {
 				"title": "Vaccination Sessions and Expenditure",
-				"dx": "DUGbjlfcV0e;EBkkIg9azVn",
+				"dx": "DUGbjlfcV0e;eW2HITcqbh2",
 				"pe": "TODAY;YESTERDAY;THIS_YEAR",
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
