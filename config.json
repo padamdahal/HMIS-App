@@ -2,7 +2,7 @@
 	"u1Ddilng3F5": {
 		"totalVaccinated": {
 			"config": {
-				"title": "",
+				"title": "Total Vaccinated",
 				"dx": "cOhZAOAHJZd",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
@@ -14,12 +14,12 @@
 				"category": "reporting",
 				"yaxis":{"title":""},
 				"xaxis":{"title":""},
-				"cssClass": ""
+				"cssClass": "col-md-4"
 			}
 		},
 		"totalSessions": {
 			"config": {
-				"title": "",
+				"title": "Total Sessions",
 				"dx": "DUGbjlfcV0e",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
@@ -31,12 +31,12 @@
 				"category": "reporting",
 				"yaxis":{"title":""},
 				"xaxis":{"title":""},
-				"cssClass": ""
+				"cssClass": "col-md-4"
 			}
 		},
 		"totalAefi": {
 			"config": {
-				"title": "",
+				"title": "Total AEFI",
 				"dx": "u2juuqreETO",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
@@ -48,7 +48,7 @@
 				"category": "reporting",
 				"yaxis":{"title":""},
 				"xaxis":{"title":""},
-				"cssClass": ""
+				"cssClass": "col-md-4"
 			}
 		},
 		"todayReportingCount": {
