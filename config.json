@@ -257,7 +257,7 @@
 			"config": {
 				"title": "Total Sessions (Phase 3)",
 				"dx": "DUGbjlfcV0e",
-				"pe": "THIS_YEAR",
+				"pe": ["2021-04-07","TODAY"],
 				"ouLevel": "selected",
 				"rows": [],
 				"cols": [],
@@ -290,7 +290,7 @@
 		"todayReportingCount": {
 			"config": {
 				"title": "Reporting Status (Expected vs Actual)",
-				"dx": "u1Ddilng3F5.EXPECTED_REPORTS;u1Ddilng3F5.ACTUAL_REPORTS",
+				"dx": "gS4woG8U86Y.EXPECTED_REPORTS;gS4woG8U86Y.ACTUAL_REPORTS",
 				"pe": "TODAY;LAST_3_DAYS",
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
@@ -307,7 +307,7 @@
 		"todayReportingRate": {
 			"config": {
 				"title": "Reporting Rates",
-				"dx": "u1Ddilng3F5.REPORTING_RATE;u1Ddilng3F5.REPORTING_RATE_ON_TIME",
+				"dx": "gS4woG8U86Y.REPORTING_RATE;gS4woG8U86Y.REPORTING_RATE_ON_TIME",
 				"pe": "TODAY;LAST_3_DAYS",
 				"ouLevel": "+subLevel",
 				"rows": ["Organisation unit"],
