@@ -10,7 +10,8 @@
 				"cols": ["Period", "Data"],
 				"hide":["rowTotal"],
 				"aggregator": "sum",
-				"visualizationType": ""
+				"visualizationType": "",
+				"cssClass": "col-md-6"
 			}
 		},
 		"consolidatedReport":{
@@ -44,7 +45,7 @@
 				"category": "data",
 				"yaxis":{"title":"Period"},
 				"xaxis":{"title":"Total Vaccinated"},
-				"cssClass": "col-md-6"
+				"cssClass": "col-md-12"
 			}
 		},
 		"aefiByType":{
