@@ -19,7 +19,7 @@
 		},
 		"totalSessions": {
 			"config": {
-				"title": "Total Sessions (2nd Dose)",
+				"title": "Total Sessions",
 				"dx": "sxFDV1L5BcY",
 				"pe": ["2021-06-08","TODAY"],
 				"ouLevel": "selected",
@@ -36,7 +36,7 @@
 		},
 		"totalAefi": {
 			"config": {
-				"title": "Total AEFI (2nd Dose)",
+				"title": "Total AEFI",
 				"dx": "xK2cTjv3St5",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
