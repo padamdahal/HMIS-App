@@ -55,7 +55,7 @@
 			"config": {
 				"title": "Reporting Status (Expected vs Actual)",
 				"dx": "myVaot6vNWf.EXPECTED_REPORTS;myVaot6vNWf.ACTUAL_REPORTS",
-				"pe": ["2021-04-20","TODAY"],
+				"pe": ["2021-07-18","TODAY"],
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
 				"cols": ["Period","Data"],
@@ -106,7 +106,7 @@
 			"config": {
 				"title": "AEFI Summary",
 				"dx": "hEbbtCGpgXZ.AyQwIY0NmSD;hEbbtCGpgXZ.GjMOpblqjFg",
-				"pe": ["2021-04-07","TODAY","THIS_YEAR"],
+				"pe": ["2021-07-18","TODAY","THIS_YEAR"],
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
 				"cols": ["Data", "Period"],
@@ -123,7 +123,7 @@
 			"config": {
 				"title": "Vaccination Sessions and Expenditure",
 				"dx": "ygqs0HQ1A0M;rZCgg32i8xp",
-				"pe": ["2021-04-20","TODAY","THIS_YEAR"],
+				"pe": ["2021-07-18","TODAY","THIS_YEAR"],
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
 				"cols": ["Data", "Period"],
@@ -140,7 +140,7 @@
 			"config": {
 					"title": "Vaccination Sessions by Districts",
 					"dx": "ygqs0HQ1A0M",
-					"pe": ["2021-04-20","TODAY"],
+					"pe": ["2021-07-18","TODAY"],
 					"ouLevel": "LEVEL-3",
 					"rows": ["Organisation unit"],
 					"cols": ["Data", "Period"],
