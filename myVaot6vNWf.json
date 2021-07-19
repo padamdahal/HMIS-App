@@ -17,11 +17,12 @@
 				"cssClass": "col-md-4"
 			}
 		},
-		"totalSessions": {
+
+	"totalSessions": {
 			"config": {
 				"title": "Total Sessions",
 				"dx": "ccygqs0HQ1A0M",
-				"pe": ["THIS_YEAR"],
+				"pe": ["2021-07-18","TODAY"],
 				"ouLevel": "selected",
 				"rows": [],
 				"cols": [],
