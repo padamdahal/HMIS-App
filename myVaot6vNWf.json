@@ -21,7 +21,7 @@
 			"config": {
 				"title": "Total Sessions",
 				"dx": "ccygqs0HQ1A0M",
-				"pe": ["2021-04-07","TODAY"],
+				"pe": ["THIS_YEAR"],
 				"ouLevel": "selected",
 				"rows": [],
 				"cols": [],
