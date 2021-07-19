@@ -2,7 +2,7 @@
 	"myVaot6vNWf": {
 		"totalVaccinated": {
 			"config": {
-				"title": "Total Vaccinated (2nd Dose)",
+				"title": "Total Vaccinated",
 				"dx": "OryMg9l4Eo6",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
@@ -19,7 +19,7 @@
 		},
 		"totalSessions": {
 			"config": {
-				"title": "Total Sessions (2nd Dose)",
+				"title": "Total Sessions",
 				"dx": "ccygqs0HQ1A0M",
 				"pe": ["2021-04-07","TODAY"],
 				"ouLevel": "selected",
@@ -36,7 +36,7 @@
 		},
 		"totalAefi": {
 			"config": {
-				"title": "Total AEFI (2nd Dose)",
+				"title": "Total AEFI",
 				"dx": "hEbbtCGpgXZ",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
