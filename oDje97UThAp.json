@@ -54,7 +54,7 @@
 		"todayReportingCount": {
 			"config": {
 				"title": "Reporting Status (Expected vs Actual)",
-				"dx": "u1Ddilng3F5.EXPECTED_REPORTS;u1Ddilng3F5.ACTUAL_REPORTS",
+				"dx": "oDje97UThAp.EXPECTED_REPORTS;u1Ddilng3F5.ACTUAL_REPORTS",
 				"pe": "TODAY;LAST_3_DAYS",
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
@@ -71,7 +71,7 @@
 		"todayReportingRate": {
 			"config": {
 				"title": "Reporting Rates",
-				"dx": "oDje97UThAp.REPORTING_RATE;u1Ddilng3F5.REPORTING_RATE_ON_TIME",
+				"dx": "oDje97UThAp.REPORTING_RATE;oDje97UThAp.REPORTING_RATE_ON_TIME",
 				"pe": "TODAY;LAST_3_DAYS",
 				"ouLevel": "+subLevel",
 				"rows": ["Organisation unit"],
@@ -88,7 +88,7 @@
 		"vaccinatedSummary": {
 			"config": {
 				"title": "Vaccinated Summary",
-				"dx": "cOhZAOAHJZd",
+				"dx": "WVKQUhZECne",
 				"pe": "20210307;20210308;20210309;20210310;20210311;20210312;20210313;20210314;20210315;20210316;20210317;20210318;20210319;20210320;20210321;20210322;20210323;TODAY;YESTERDAY;THIS_YEAR",
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
