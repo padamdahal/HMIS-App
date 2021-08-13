@@ -122,7 +122,7 @@
 		"sessionSummary": {
 			"config": {
 				"title": "Vaccination Sessions and Expenditure",
-				"dx": "zTLoQauy2UW;uCXhGK7bUV1",
+				"dx": "tIdOSQCf0ED;uCXhGK7bUV1",
 				"pe": "TODAY;YESTERDAY;THIS_YEAR",
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
@@ -139,7 +139,7 @@
 		"sessionsByDistrict": {
 			"config": {
 				"title": "Vaccination Sessions by Districts",
-				"dx": "zTLoQauy2UW",
+				"dx": "tIdOSQCf0ED",
 				"pe": "THIS_YEAR",
 				"ouLevel": "LEVEL-3",
 				"rows": ["Organisation unit"],
