@@ -1,0 +1,157 @@
+{
+	"PAFrNXASlT9": {
+		"totalVaccinated": {
+			"config": {
+				"title": "Total Vaccinated",
+				"dx": "qmnQfNY3zOW",
+				"pe": "THIS_YEAR",
+				"ouLevel": "selected",
+				"rows": [],
+				"cols": [],
+				"hide":[],
+				"aggregator": "",
+				"visualizationType": "number",
+				"category": "reporting",
+				"yaxis":{"title":""},
+				"xaxis":{"title":""},
+				"cssClass": "col-md-4"
+			}
+		},
+		"totalSessions": {
+			"config": {
+				"title": "Total Sessions",
+				"dx": "zOttc1mwAfI",
+				"pe": ["2021-08-15","TODAY"],
+				"ouLevel": "selected",
+				"rows": [],
+				"cols": [],
+				"hide":[],
+				"aggregator": "",
+				"visualizationType": "number",
+				"category": "reporting",
+				"yaxis":{"title":""},
+				"xaxis":{"title":""},
+				"cssClass": "col-md-4"
+			}
+		},
+		"totalAefi": {
+			"config": {
+				"title": "Total AEFI",
+				"dx": "rUtneGq3iXC",
+				"pe": "THIS_YEAR",
+				"ouLevel": "selected",
+				"rows": [],
+				"cols": [],
+				"hide":[],
+				"aggregator": "",
+				"visualizationType": "number",
+				"category": "reporting",
+				"yaxis":{"title":""},
+				"xaxis":{"title":""},
+				"cssClass": "col-md-4"
+			}
+		},
+		"todayReportingCount": {
+			"config": {
+				"title": "Reporting Status (Expected vs Actual)",
+				"dx": "Uni42L9JIua.EXPECTED_REPORTS;PAFrNXASlT9.ACTUAL_REPORTS",
+				"pe": ["2021-08-15","TODAY"],
+				"ouLevel": "subLevel",
+				"rows": ["Organisation unit"],
+				"cols": ["Period","Data"],
+				"hide":["rowTotal"],
+				"aggregator": "sum",
+				"visualizationType": "",
+				"category": "reporting",
+				"yaxis":{"title":"Number"},
+				"xaxis":{"title":"aaa"},
+				"cssClass": "col-md-6"
+			}
+		},
+		"todayReportingRate": {
+			"config": {
+				"title": "Reporting Rates",
+				"dx": "Uni42L9JIua.REPORTING_RATE;Uni42L9JIua.REPORTING_RATE_ON_TIME",
+				"pe": "TODAY;LAST_3_DAYS",
+				"ouLevel": "+subLevel",
+				"rows": ["Organisation unit"],
+				"cols": ["Period","Data"],
+				"hide":["rowTotal","colTotal"],
+				"aggregator": "sum",
+				"visualizationType": "",
+				"category": "reporting",
+				"yaxis":{"title":"Number"},
+				"xaxis":{"title":"aaa"},
+				"cssClass": "col-md-6"
+			}
+		},
+		"vaccinatedSummary": {
+			"config": {
+				"title": "Vaccinated Summary",
+				"dx": "qmnQfNY3zOW",
+				"pe": ["22021-08-15","TODAY","THIS_YEAR"],
+				"ouLevel": "subLevel",
+				"rows": ["Organisation unit"],
+				"cols": ["Data","Period"],
+				"hide":["rowTotal"],
+				"aggregator": "sum",
+				"visualizationType": "",
+				"category": "data",
+				"yaxis":{"title":"Period"},
+				"xaxis":{"title":"Total Vaccinated"},
+				"cssClass": "col-md-6"
+			}
+		},
+		"aefiSummary": {
+			"config": {
+				"title": "AEFI Summary",
+				"dx": "EcVXHzWmAey.AyQwIY0NmSD;EcVXHzWmAey.GjMOpblqjFg",
+				"pe": ["2021-08-15","TODAY","THIS_YEAR"],
+				"ouLevel": "subLevel",
+				"rows": ["Organisation unit"],
+				"cols": ["Data", "Period"],
+				"hide":["rowTotal"],
+				"aggregator": "sum",
+				"visualizationType": "",
+				"category": "data",
+				"yaxis":{"title":"Period"},
+				"xaxis":{"title":"Total Vaccinated"},
+				"cssClass": "col-md-6"
+			}
+		},
+		"sessionSummary": {
+			"config": {
+				"title": "Vaccination Sessions and Expenditure",
+				"dx": "zOttc1mwAfI;kx1HNrPTDPP",
+				"pe": ["2021-08-15","TODAY","THIS_YEAR"],
+				"ouLevel": "subLevel",
+				"rows": ["Organisation unit"],
+				"cols": ["Data", "Period"],
+				"hide":["rowTotal"],
+				"aggregator": "sum",
+				"visualizationType": "",
+				"category": "data",
+				"yaxis":{"title":"Period"},
+				"xaxis":{"title":"Total Vaccinated"},
+				"cssClass": "col-md-6"
+			}
+		},
+		"sessionsByDistrict": {
+			"config": {
+					"title": "Vaccination Sessions by Districts",
+					"dx": "zOttc1mwAfI",
+					"pe": ["2021-08-15","TODAY"],
+					"ouLevel": "LEVEL-3",
+					"rows": ["Organisation unit"],
+					"cols": ["Data", "Period"],
+					"hide":["rowTotal"],
+					"aggregator": "sum",
+					"visualizationType": "map",
+					"category": "data",
+					"yaxis":{"title":"Period"},
+					"xaxis":{"title":"Total Vaccinated"},
+					"cssClass": "col-md-6"
+				}
+			}
+	}
+}
