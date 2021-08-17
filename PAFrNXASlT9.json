@@ -105,7 +105,7 @@
 		"aefiSummary": {
 			"config": {
 				"title": "AEFI Summary",
-				"dx": "EcVXHzWmAey.AyQwIY0NmSD;EcVXHzWmAey.GjMOpblqjFg",
+				"dx": "rUtneGq3iXC.AyQwIY0NmSD;rUtneGq3iXC.GjMOpblqjFg",
 				"pe": ["2021-08-15","TODAY","THIS_YEAR"],
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
