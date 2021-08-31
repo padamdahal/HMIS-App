@@ -89,7 +89,7 @@
 			"config": {
 				"title": "Vaccinated Summary",
 				"dx": "WVKQUhZECne",
-				"pe": "TODAY;LAST_7_DAYS",
+				"pe": "2021-08-09";"TODAY","THIS_YEAR",
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
 				"cols": ["Data","Period"],
