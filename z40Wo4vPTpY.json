@@ -1,9 +1,9 @@
 {
-	"z40Wo4vPTpY": {
+	"Uni42L9JIua": {
 		"totalVaccinated": {
 			"config": {
 				"title": "Total Vaccinated",
-				"dx": "PKj78JJq0kx",
+				"dx": "RYxw3jqQRGh",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
 				"rows": [],
@@ -19,9 +19,9 @@
 		},
 		"totalSessions": {
 			"config": {
-				"title": "Total Vaccination Centres",
-				"dx": "xaLv3rZeOnJ",
-				"pe": "THIS_YEAR",
+				"title": "Total Sessions",
+				"dx": "mQfDcpKVx2Y",
+				"pe": ["2021-06-08","TODAY"],
 				"ouLevel": "selected",
 				"rows": [],
 				"cols": [],
@@ -37,7 +37,7 @@
 		"totalAefi": {
 			"config": {
 				"title": "Total AEFI",
-				"dx": "SO8HrH9s8pI",
+				"dx": "rUtneGq3iXC",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
 				"rows": [],
@@ -54,8 +54,8 @@
 		"todayReportingCount": {
 			"config": {
 				"title": "Reporting Status (Expected vs Actual)",
-				"dx": "z40Wo4vPTpY.EXPECTED_REPORTS;z40Wo4vPTpY.ACTUAL_REPORTS",
-				"pe": "TODAY;LAST_3_DAYS",
+				"dx": "Uni42L9JIua.EXPECTED_REPORTS;Uni42L9JIua.ACTUAL_REPORTS",
+				"pe": ["2021-06-08","TODAY"],
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
 				"cols": ["Period","Data"],
@@ -71,7 +71,7 @@
 		"todayReportingRate": {
 			"config": {
 				"title": "Reporting Rates",
-				"dx": "z40Wo4vPTpY.REPORTING_RATE;z40Wo4vPTpY.REPORTING_RATE_ON_TIME",
+				"dx": "Uni42L9JIua.REPORTING_RATE;Uni42L9JIua.REPORTING_RATE_ON_TIME",
 				"pe": "TODAY;LAST_3_DAYS",
 				"ouLevel": "+subLevel",
 				"rows": ["Organisation unit"],
@@ -88,8 +88,8 @@
 		"vaccinatedSummary": {
 			"config": {
 				"title": "Vaccinated Summary",
-				"dx": "PKj78JJq0kx",
-				"pe": "20210307;20210308;20210309;20210310;20210311;20210312;20210313;20210314;20210315;20210316;20210317;20210318;20210319;20210320;20210321;20210322;20210323;TODAY;YESTERDAY;THIS_YEAR",
+				"dx": "RYxw3jqQRGh",
+				"pe": ["2021-06-08","TODAY","THIS_YEAR"],
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
 				"cols": ["Data","Period"],
@@ -105,8 +105,8 @@
 		"aefiSummary": {
 			"config": {
 				"title": "AEFI Summary",
-				"dx": "WLUyMsIDNQt.AyQwIY0NmSD;WLUyMsIDNQt.GjMOpblqjFg",
-				"pe": "TODAY;YESTERDAY;THIS_YEAR",
+				"dx": "rUtneGq3iXC.AyQwIY0NmSD;rUtneGq3iXC.GjMOpblqjFg",
+				"pe": ["2021-06-08","TODAY","THIS_YEAR"],
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
 				"cols": ["Data", "Period"],
@@ -121,9 +121,9 @@
 		},
 		"sessionSummary": {
 			"config": {
-				"title": "Vaccination Centres and Expenditure",
-				"dx": "xaLv3rZeOnJ;Gst3pgOugPG",
-				"pe": "TODAY;YESTERDAY;THIS_YEAR",
+				"title": "Vaccination Sessions and Expenditure",
+				"dx": "mQfDcpKVx2Y;DAtJjg0iVvx",
+				"pe": ["2021-06-08","TODAY","THIS_YEAR"],
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
 				"cols": ["Data", "Period"],
@@ -138,21 +138,20 @@
 		},
 		"sessionsByDistrict": {
 			"config": {
-				"title": "Vaccination Sessions by Districts",
-				"dx": "xaLv3rZeOnJ",
-				"pe": "THIS_YEAR",
-				"ouLevel": "LEVEL-3",
-				"rows": ["Organisation unit"],
-				"cols": ["Data", "Period"],
-				"hide":["rowTotal"],
-				"aggregator": "sum",
-				"visualizationType": "map",
-				"category": "data",
-				"yaxis":{"title":"Period"},
-				"xaxis":{"title":"Total Vaccinated"},
-				"cssClass": "col-md-6"
+					"title": "Vaccination Sessions by Districts",
+					"dx": "mQfDcpKVx2Y",
+					"pe": ["2021-06-08","TODAY"],
+					"ouLevel": "LEVEL-3",
+					"rows": ["Organisation unit"],
+					"cols": ["Data", "Period"],
+					"hide":["rowTotal"],
+					"aggregator": "sum",
+					"visualizationType": "map",
+					"category": "data",
+					"yaxis":{"title":"Period"},
+					"xaxis":{"title":"Total Vaccinated"},
+					"cssClass": "col-md-6"
+				}
 			}
-		},
-		
 	}
 }
