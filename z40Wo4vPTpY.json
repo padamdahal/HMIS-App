@@ -3,7 +3,7 @@
 		"totalVaccinated": {
 			"config": {
 				"title": "Total Vaccinated",
-				"dx": "RYxw3jqQRGh",
+				"dx": "PKj78JJq0kx",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
 				"rows": [],
@@ -15,7 +15,7 @@
 				"yaxis":{"title":""},
 				"xaxis":{"title":""},
 				"cssClass": "col-md-4"
-			}
+			},
 		
 		
 }
