@@ -19,8 +19,8 @@
 		},
 		"totalSessions": {
 			"config": {
-				"title": "Total Sessions",
-				"dx": "mQfDcpKVx2Y",
+				"title": "Total Vaccination Centers",
+				"dx": "xaLv3rZeOnJ",
 				"pe": ["2021-06-08","TODAY"],
 				"ouLevel": "selected",
 				"rows": [],
@@ -37,7 +37,7 @@
 		"totalAefi": {
 			"config": {
 				"title": "Total AEFI",
-				"dx": "rUtneGq3iXC",
+				"dx": "SO8HrH9s8pI",
 				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
 				"rows": [],
@@ -88,7 +88,7 @@
 		"vaccinatedSummary": {
 			"config": {
 				"title": "Vaccinated Summary",
-				"dx": "RYxw3jqQRGh",
+				"dx": "RPKj78JJq0kx",
 				"pe": ["2021-06-08","TODAY","THIS_YEAR"],
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
@@ -105,7 +105,7 @@
 		"aefiSummary": {
 			"config": {
 				"title": "AEFI Summary",
-				"dx": "rUtneGq3iXC.AyQwIY0NmSD;rUtneGq3iXC.GjMOpblqjFg",
+				"dx": "SO8HrH9s8pI.AyQwIY0NmSD;SO8HrH9s8pI.GjMOpblqjFg",
 				"pe": ["2021-06-08","TODAY","THIS_YEAR"],
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
@@ -121,8 +121,8 @@
 		},
 		"sessionSummary": {
 			"config": {
-				"title": "Vaccination Sessions and Expenditure",
-				"dx": "mQfDcpKVx2Y;DAtJjg0iVvx",
+				"title": "Vaccination Centers and Expenditure",
+				"dx": "xaLv3rZeOnJ;Gst3pgOugPG",
 				"pe": ["2021-06-08","TODAY","THIS_YEAR"],
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
@@ -138,8 +138,8 @@
 		},
 		"sessionsByDistrict": {
 			"config": {
-					"title": "Vaccination Sessions by Districts",
-					"dx": "mQfDcpKVx2Y",
+					"title": "Vaccination Centers by Districts",
+					"dx": "xaLv3rZeOnJ",
 					"pe": ["2021-06-08","TODAY"],
 					"ouLevel": "LEVEL-3",
 					"rows": ["Organisation unit"],
