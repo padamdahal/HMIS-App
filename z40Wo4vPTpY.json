@@ -19,7 +19,7 @@
 		},
 		"totalSessions": {
 			"config": {
-				"title": "Total Sessions",
+				"title": "Total Vaccination Cetnters",
 				"dx": "mQfDcpKVx2Y",
 				"pe": ["2021-06-08","TODAY"],
 				"ouLevel": "selected",
