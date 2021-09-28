@@ -88,7 +88,7 @@
 		"vaccinatedSummary": {
 			"config": {
 				"title": "Vaccinated Summary",
-				"dx": "RPKj78JJq0kx",
+				"dx": "PKj78JJq0kx",
 				"pe": ["2021-06-08","TODAY","THIS_YEAR"],
 				"ouLevel": "subLevel",
 				"rows": ["Organisation unit"],
