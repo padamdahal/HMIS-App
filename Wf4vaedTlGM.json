@@ -21,7 +21,7 @@
 			"config": {
 				"title": "Total Vaccination Cetnters",
 				"dx": "XPqVyGSVGPe",
-				"pe": ["2021-06-08","TODAY"],
+				"pe": "THIS_YEAR",
 				"ouLevel": "selected",
 				"rows": [],
 				"cols": [],
